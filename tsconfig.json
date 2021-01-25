@@ -2,7 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
+    "outDir": "./docs/out-tsc",
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
@@ -22,10 +22,10 @@
     ],
     "paths": {
       "ngafr-authentication": [
-        "dist/ngafr-authentication"
+        "docs/ngafr-authentication"
       ],
       "ngafr-authentication/*": [
-        "dist/ngafr-authentication/*"
+        "docs/ngafr-authentication/*"
       ]
     }
   },

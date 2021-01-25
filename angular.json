@@ -52,7 +52,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ngafr-testapp",
+            "outputPath": "docs/ngafr-testapp",
             "index": "projects/ngafr-testapp/src/index.html",
             "main": "projects/ngafr-testapp/src/main.ts",
             "polyfills": "projects/ngafr-testapp/src/polyfills.ts",

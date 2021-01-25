@@ -1,0 +1,36 @@
+{
+  "name": "ngafr-authentication",
+  "version": "1.0.7",
+  "description": "This library is used to add the firebase authentication (Email / Password or Social login) using the directive *ngafrAuth in the html template of Angular project.",
+  "author": "Rohan Dcunha",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rdc3/Ngafr"
+  },
+  "bugs": {
+    "url": "https://github.com/rdc3/Ngafr/issues"
+  },
+  "homepage": "https://rdc3.github.io/Ngafr",
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/core": "^8.2.14",
+    "@angular/fire": "^6.0.0",
+    "firebase": "^7.14.6",
+    "firebaseui": "^4.5.0",
+    "firebaseui-angular": "^5.0.0"
+  },
+  "main": "bundles/ngafr-authentication.umd.js",
+  "module": "fesm5/ngafr-authentication.js",
+  "es2015": "fesm2015/ngafr-authentication.js",
+  "esm5": "esm5/ngafr-authentication.js",
+  "esm2015": "esm2015/ngafr-authentication.js",
+  "fesm5": "fesm5/ngafr-authentication.js",
+  "fesm2015": "fesm2015/ngafr-authentication.js",
+  "typings": "ngafr-authentication.d.ts",
+  "metadata": "ngafr-authentication.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
