@@ -6,15 +6,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"], {
   /***/
-  "../../docs/ngafr-authentication/fesm2015/ngafr-authentication.js":
-  /*!********************************************************************************************************************!*\
-    !*** D:/eLearning/Angular2/GitHub/ngafr-authentication/docs/ngafr-authentication/fesm2015/ngafr-authentication.js ***!
-    \********************************************************************************************************************/
+  "../../docs/ngafr-authentication/ngafr-authentication/fesm2015/ngafr-authentication.js":
+  /*!*****************************************************************************************************************************************!*\
+    !*** D:/eLearning/Angular2/GitHub/ngafr-authentication/docs/ngafr-authentication/ngafr-authentication/fesm2015/ngafr-authentication.js ***!
+    \*****************************************************************************************************************************************/
 
   /*! exports provided: FirebaseConfigData, FirebaseConfigService, NgafrAuthDirective, NgafrAuthenticationComponent, NgafrAuthenticationModule, NgafrAuthenticationService */
 
   /***/
-  function docsNgafrAuthenticationFesm2015NgafrAuthenticationJs(module, __webpack_exports__, __webpack_require__) {
+  function docsNgafrAuthenticationNgafrAuthenticationFesm2015NgafrAuthenticationJs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -1719,7 +1719,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var ngafr_authentication__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
     /*! ngafr-authentication */
-    "../../docs/ngafr-authentication/fesm2015/ngafr-authentication.js"); // import { NgafrAuthDirective } from './../../../ngafr-authentication/src/lib/ngafr-authentication.directive';
+    "../../docs/ngafr-authentication/ngafr-authentication/fesm2015/ngafr-authentication.js"); // import { NgafrAuthDirective } from './../../../ngafr-authentication/src/lib/ngafr-authentication.directive';
     // import { NgafrAuthDirective } from 'projects/ngafr-authentication/src/lib/ngafr-authentication.directive';
 
 

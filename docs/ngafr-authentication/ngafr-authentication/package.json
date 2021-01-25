@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/rdc3/Ngafr/issues"
   },
-  "homepage": "https://rdc3.github.io/Ngafr",
+  "homepage": "https://rdc3.github.io/ngafr-authentication",
   "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^8.2.14",
