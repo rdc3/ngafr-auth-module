@@ -1,0 +1,14 @@
+/**
+ * @fileoverview added by tsickle
+ * Generated from: public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/*
+ * Public API Surface of ngafr-authentication
+ */
+export { NgafrAuthDirective } from './lib/ngafr-authentication.directive';
+export { FirebaseConfigData, NgafrAuthenticationModule } from './lib/ngafr-authentication.module';
+export { FirebaseConfigService } from './lib/ngafr-firebase-config.service';
+export { NgafrAuthenticationService } from './lib/ngafr-authentication.service';
+export { NgafrAuthenticationComponent } from './lib/ngafr-authentication.component';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL25nYWZyLWF1dGhlbnRpY2F0aW9uLyIsInNvdXJjZXMiOlsicHVibGljLWFwaS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7OztBQUlBLG1DQUFjLHNDQUFzQyxDQUFDO0FBQ3JELDhEQUFjLG1DQUFtQyxDQUFDO0FBQ2xELHNDQUFjLHFDQUFxQyxDQUFDO0FBQ3BELDJDQUFjLG9DQUFvQyxDQUFDO0FBQ25ELDZDQUFjLHNDQUFzQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLypcclxuICogUHVibGljIEFQSSBTdXJmYWNlIG9mIG5nYWZyLWF1dGhlbnRpY2F0aW9uXHJcbiAqL1xyXG5cclxuZXhwb3J0ICogZnJvbSAnLi9saWIvbmdhZnItYXV0aGVudGljYXRpb24uZGlyZWN0aXZlJztcclxuZXhwb3J0ICogZnJvbSAnLi9saWIvbmdhZnItYXV0aGVudGljYXRpb24ubW9kdWxlJztcclxuZXhwb3J0ICogZnJvbSAnLi9saWIvbmdhZnItZmlyZWJhc2UtY29uZmlnLnNlcnZpY2UnO1xyXG5leHBvcnQgKiBmcm9tICcuL2xpYi9uZ2Fmci1hdXRoZW50aWNhdGlvbi5zZXJ2aWNlJztcclxuZXhwb3J0ICogZnJvbSAnLi9saWIvbmdhZnItYXV0aGVudGljYXRpb24uY29tcG9uZW50JztcclxuZXhwb3J0IHtJRmlyZWJhc2VDb25mLCBJRmlyZWJhc2VBdXRoUHJvdmlkZXJzfSBmcm9tICcuL2xpYi9uZ2Fmci1maXJlYmFzZS1jb25maWcubW9kZWwnO1xyXG5cclxuIl19
