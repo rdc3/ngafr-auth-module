@@ -1,0 +1,8 @@
+<ng-container
+ ngafrAuth
+ (userLoggedInEvent)="loggedInEvent($event)"
+ (userEvent)="userEvent($event)"
+ hideDefaultLogOutButton = "true"
+ #ngafrAuth="ngafrAuth"
+ ></ng-container>
+<button class="ng-star-inserted" (click)="ngafrAuth.logout()">Logout</button>
