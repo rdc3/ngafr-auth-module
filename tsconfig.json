@@ -22,10 +22,10 @@
     ],
     "paths": {
       "ngafr-authentication": [
-        "docs/ngafr-authentication/ngafr-authentication"
+        "docs/ngafr-authentication"
       ],
       "ngafr-authentication/*": [
-        "docs/ngafr-authentication/ngafr-authentication/*"
+        "docs/ngafr-authentication/*"
       ]
     }
   },
