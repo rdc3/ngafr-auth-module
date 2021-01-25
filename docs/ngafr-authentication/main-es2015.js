@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
 
-/***/ "../../docs/ngafr-authentication/fesm2015/ngafr-authentication.js":
-/*!********************************************************************************************************************!*\
-  !*** D:/eLearning/Angular2/GitHub/ngafr-authentication/docs/ngafr-authentication/fesm2015/ngafr-authentication.js ***!
-  \********************************************************************************************************************/
+/***/ "../../docs/ngafr-authentication/ngafr-authentication/fesm2015/ngafr-authentication.js":
+/*!*****************************************************************************************************************************************!*\
+  !*** D:/eLearning/Angular2/GitHub/ngafr-authentication/docs/ngafr-authentication/ngafr-authentication/fesm2015/ngafr-authentication.js ***!
+  \*****************************************************************************************************************************************/
 /*! exports provided: FirebaseConfigData, FirebaseConfigService, NgafrAuthDirective, NgafrAuthenticationComponent, NgafrAuthenticationModule, NgafrAuthenticationService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -963,7 +963,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _auth_auth_code_auth_code_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./auth/auth-code/auth-code.component */ "./src/app/auth/auth-code/auth-code.component.ts");
 /* harmony import */ var _auth_auth_demo_auth_demo_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./auth/auth-demo/auth-demo.component */ "./src/app/auth/auth-demo/auth-demo.component.ts");
 /* harmony import */ var _common_view_selector_view_selector_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./_common/view-selector/view-selector.component */ "./src/app/_common/view-selector/view-selector.component.ts");
-/* harmony import */ var ngafr_authentication__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ngafr-authentication */ "../../docs/ngafr-authentication/fesm2015/ngafr-authentication.js");
+/* harmony import */ var ngafr_authentication__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ngafr-authentication */ "../../docs/ngafr-authentication/ngafr-authentication/fesm2015/ngafr-authentication.js");
 
 // import { NgafrAuthDirective } from './../../../ngafr-authentication/src/lib/ngafr-authentication.directive';
 
