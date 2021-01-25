@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/rdc3/ngafr/issues"
   },
-  "homepage": "https://github.com/rdc3/ngafr",
+  "homepage": "https://rdc3.githut.io/ngafr-authentication",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -19,8 +19,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:app1": "npm run build:auth && ng build ngafr-testapp --prod --delete-output-path false --outputPath docs --baseHref /ngafr/ && npm run create404page",
-    "build:app": "ng build ngafr-testapp --outputPath docs --baseHref /ngafr/ --delete-output-path false",
+    "build:app1": "npm run build:auth && ng build ngafr-testapp --prod --delete-output-path false --outputPath docs --baseHref /ngafr-authentication/ && npm run create404page",
+    "build:app": "ng build ngafr-testapp --outputPath docs --baseHref /ngafr-authentication/ --delete-output-path false",
     "create404page": "ncp docs/index.html docs/404.html",
     "build:auth": "ng build ngafr-authentication",
     "build:auth-watch": "ng build ngafr-authentication --watch",
