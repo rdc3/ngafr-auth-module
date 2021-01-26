@@ -1,8 +1,16 @@
-<ng-container
- ngafrAuth
- (userLoggedInEvent)="loggedInEvent($event)"
- (userEvent)="userEvent($event)"
- hideDefaultLogOutButton = "true"
- #ngafrAuth="ngafrAuth"
- ></ng-container>
-<button class="ng-star-inserted" (click)="ngafrAuth.logout()">Logout</button>
+<div class="demo-container">
+    <div [ngClass]="!loggedIn?'auth-buttons-container':'auth-buttons-container-hidden'">
+        This section is created by the NgafrAuthentication library <br/>
+        <ng-container
+        ngafrAuth
+        (userLoggedInEvent)="loggedInEvent($event)"
+        (userEvent)="userEvent($event)"
+        hideDefaultLogOutButton = "true"
+        #ngafrAuth="ngafrAuth"
+        ></ng-container>
+    </div>
+    <span *ngIf="loggedIn">{{userName}} user has logged in.</span>
+    <button [disabled]="!loggedIn" class="ng-star-inserted logout-button" (click)="ngafrAuth.logout()">Logout</button>
+    <br/>
+    This section is created by the parent component
+</div>

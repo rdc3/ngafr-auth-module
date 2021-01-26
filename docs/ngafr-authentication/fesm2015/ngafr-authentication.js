@@ -147,7 +147,6 @@ class NgafrAuthenticationComponent {
          */
         hide => {
             this.hideLogOutButton = hide;
-            console.log(" in lib component : hideLogOutButton =", this.hideLogOutButton);
             this.cdr.markForCheck();
         }));
     }

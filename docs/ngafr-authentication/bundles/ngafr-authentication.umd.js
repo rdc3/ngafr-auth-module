@@ -156,7 +156,6 @@
              */
             function (hide) {
                 _this.hideLogOutButton = hide;
-                console.log(" in lib component : hideLogOutButton =", _this.hideLogOutButton);
                 _this.cdr.markForCheck();
             }));
         }

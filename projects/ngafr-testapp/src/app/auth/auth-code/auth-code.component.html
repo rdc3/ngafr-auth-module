@@ -29,6 +29,12 @@ AppModule
     ]
 
 Template
-    &lt;div libNgafrAuth&gt;&lt;/div&gt;
+    &lt;div
+      ngafrAuth
+      (userLoggedInEvent)="loggedInEvent($event)"
+      (userEvent)="userEvent($event)"
+      hideDefaultLogOutButton = "true"
+      #ngafrAuth="ngafrAuth"&gt;
+    &lt;/div&gt;
     </pre>
 </div>

@@ -1,0 +1,19 @@
+.auth-buttons-container{
+    padding: 30px;
+    border: 3px solid lightgrey;
+    margin-bottom: 20px;
+    border-style: dashed;
+}
+.auth-buttons-container-hidden{
+    display: none;
+}
+.demo-container{
+    padding: 10px;
+    text-align: center;
+    border: 3px solid rgb(85, 143, 250);
+    border-style: dashed;
+    font-family: 'Handlee', cursive;
+}
+.logout-button{
+    margin: 10px auto;
+}
