@@ -1741,8 +1741,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
       declarations: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"], _auth_auth_code_auth_code_component__WEBPACK_IMPORTED_MODULE_7__["AuthCodeComponent"], _auth_auth_demo_auth_demo_component__WEBPACK_IMPORTED_MODULE_8__["AuthDemoComponent"], _common_view_selector_view_selector_component__WEBPACK_IMPORTED_MODULE_9__["ViewSelectorComponent"] // ,NgafrAuthDirective
       ],
-      imports: [_app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__["BrowserAnimationsModule"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], // NgafrAuthenticationModule,  // uncomment this line if you get compilation errors in the testapp demo template
-      ngafr_authentication__WEBPACK_IMPORTED_MODULE_10__["NgafrAuthenticationModule"].forRoot(firebaseConfig, authProviders)],
+      imports: [_app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__["BrowserAnimationsModule"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], ngafr_authentication__WEBPACK_IMPORTED_MODULE_10__["NgafrAuthenticationModule"], ngafr_authentication__WEBPACK_IMPORTED_MODULE_10__["NgafrAuthenticationModule"].forRoot(firebaseConfig, authProviders)],
       providers: [],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
     })], AppModule);

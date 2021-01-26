@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { NgafrAuthDirective } from 'ngafr-authentication';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'ngafr-testapp-auth-demo',
@@ -6,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: []
 })
 export class AuthDemoComponent implements OnInit {
-
   public loggedIn = null;
   public userName = '';
   constructor() { }

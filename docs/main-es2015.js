@@ -1002,7 +1002,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"],
             _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__["BrowserAnimationsModule"],
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
-            // NgafrAuthenticationModule,  // uncomment this line if you get compilation errors in the testapp demo template
+            ngafr_authentication__WEBPACK_IMPORTED_MODULE_10__["NgafrAuthenticationModule"],
             ngafr_authentication__WEBPACK_IMPORTED_MODULE_10__["NgafrAuthenticationModule"].forRoot(firebaseConfig, authProviders)
         ],
         providers: [],

@@ -1,20 +1,11 @@
-# NgafrModules
-
-Angular libraries to create a WebRTC video conferencing app using firebase
-* **Authentication Module:**
-    Add Email/Password or Social logins based authentication to your applications using a structural directive
-* **Communication Module:**
-    Add WebRTC based video conferencing functionalities to your app using structural directives
-* **Monitoring Module:**
-    Monitor the bandwidth consumed by each video stream added via the communication module.
+# Authentication Module:
+    Add Email/Password or Social logins based authentication to your Angular applications using a directive
 
 
 ## USAGE
 ### ngafr-authentication
-[ReadMe](https://github.com/rdc3/ngafr/blob/master/projects/ngafr-authentication/README.md)
+[ReadMe](https://github.com/rdc3/ngafr-authentication/blob/main/README.md)
 
-### ngafr-communication
-[ReadMe](https://github.com/rdc3/ngafr/blob/master/projects/ngafr-communication/README.md)
 
 ## Development - Application
 ### Download Source code
@@ -30,11 +21,10 @@ npm i
 npm run build:auth
 ```
 
-
 ### Start the App
 * Create a firebase app. [Reference](https://firebase.google.com/docs/web/setup)
-* Modify the [firebase config file](https://github.com/rdc3/ngafr/blob/master/projects/ngafr-testapp/src/environments/firebase.ts) file
-* Update the authProviders in [app.module.ts](https://github.com/rdc3/ngafr/blob/master/projects/ngafr-testapp/src/app/app.module.ts) with the required auth providers during the login
+* Modify the [firebase config file](https://github.com/rdc3/ngafr-authentication/blob/master/projects/ngafr-testapp/src/environments/firebase.ts) file
+* Update the authProviders in [app.module.ts](https://github.com/rdc3/ngafr-authentication/blob/master/projects/ngafr-testapp/src/app/app.module.ts) with the required auth providers during the login
     ```cmd
     npm run start
     ```
@@ -42,7 +32,7 @@ npm run build:auth
 
 ## Development - Libraries
 ### Building the modules in watch mode
-* If you need to develop the libraries, then you can build the libraries in the watch mode in separate terminal windows with the below commands
+* If you need to develop the library, then you can build the library in the watch mode in separate terminal window with the below commands
     ```cmd
     npm run build:auth-watch
     ```
