@@ -15,7 +15,12 @@
             "tsConfig": "projects/ngafr-authentication/tsconfig.lib.json",
             "project": "projects/ngafr-authentication/ng-package.json"
           }
-        },
+        ,          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngafr-authentication/tsconfig.lib.prod.json"
+            }
+          }
+},
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
@@ -57,7 +62,7 @@
             "main": "projects/ngafr-testapp/src/main.ts",
             "polyfills": "projects/ngafr-testapp/src/polyfills.ts",
             "tsConfig": "projects/ngafr-testapp/tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "projects/ngafr-testapp/src/favicon.ico",
               "projects/ngafr-testapp/src/assets"
@@ -81,7 +86,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,

@@ -26,7 +26,7 @@ export const FirebaseConfigData = new InjectionToken<IFirebaseConf>('FIREBASECON
 })
 
 export class NgafrAuthenticationModule {
-  public static forRoot(firebaseConfig: IFirebaseConf, authProviders: IFirebaseAuthProviders): ModuleWithProviders {
+  public static forRoot(firebaseConfig: IFirebaseConf, authProviders: IFirebaseAuthProviders): ModuleWithProviders<NgafrAuthenticationModule> {
     const firebaseUiAuthConfig = FirebaseConfigService.getFirebaseUiAuthConfig(authProviders);
     return {
       ngModule: NgafrAuthenticationModule,

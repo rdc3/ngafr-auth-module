@@ -33,7 +33,7 @@ const authProviders: IFirebaseAuthProviders = {
     AppRoutingModule,
     BrowserAnimationsModule,
     BrowserModule,
-    NgafrAuthenticationModule,  // uncomment this line if you get compilation errors in the testapp demo template
+    // NgafrAuthenticationModule,  // uncomment this line if you get compilation errors in the testapp demo template
     NgafrAuthenticationModule.forRoot(firebaseConfig, authProviders)
   ],
   providers: [],
