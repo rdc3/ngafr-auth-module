@@ -23,18 +23,20 @@ export class NgafrAuthenticationComponent {
   public hideLogOutButton = false;
   constructor(
     public ngafrAuth: NgafrAuthenticationService,
-    private cdr: ChangeDetectorRef) {
-    this.ngafrAuth.isUserLoggedIn().subscribe(user => {
-      if (user) {
-        this.loggedIn = true;
-      } else {
-        this.loggedIn = false;
-      }
-    });
-    this.ngafrAuth.hideLogOutButton$.subscribe(hide => {
-      this.hideLogOutButton = hide
-      this.cdr.markForCheck();
-    });
+    private cdr: ChangeDetectorRef
+  ) {
+      console.log('in On Init');
+      this.ngafrAuth.isUserLoggedIn().subscribe(user => {
+        if (user) {
+          this.loggedIn = true;
+        } else {
+          this.loggedIn = false;
+        }
+      });
+      this.ngafrAuth.hideLogOutButton$.subscribe(hide => {
+        this.hideLogOutButton = hide
+        this.cdr.markForCheck();
+      });
     
   }
 }

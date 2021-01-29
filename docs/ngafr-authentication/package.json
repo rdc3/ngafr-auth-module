@@ -13,24 +13,34 @@
   "homepage": "https://rdc3.github.io/ngafr-authentication",
   "license": "MIT",
   "peerDependencies": {
-    "@angular/common": "^8.2.14",
-    "@angular/core": "^8.2.14",
-    "@angular/fire": "^6.0.0",
-    "firebase": "^7.14.6",
-    "firebaseui": "^4.5.0",
-    "firebaseui-angular": "^5.0.0"
+    "@angular/common": "~11.1.1",
+    "@angular/core": "~11.1.1",
+    "@angular/fire": "^6.1.4",
+    "firebase": "^8.2.4",
+    "firebaseui": "^4.7.1",
+    "firebaseui-angular": "^5.1.1"
   },
   "main": "bundles/ngafr-authentication.umd.js",
-  "module": "fesm5/ngafr-authentication.js",
+  "module_ivy_ngcc": "__ivy_ngcc__/fesm2015/ngafr-authentication.js",
+  "module": "fesm2015/ngafr-authentication.js",
+  "es2015_ivy_ngcc": "__ivy_ngcc__/fesm2015/ngafr-authentication.js",
   "es2015": "fesm2015/ngafr-authentication.js",
-  "esm5": "esm5/ngafr-authentication.js",
   "esm2015": "esm2015/ngafr-authentication.js",
-  "fesm5": "fesm5/ngafr-authentication.js",
+  "fesm2015_ivy_ngcc": "__ivy_ngcc__/fesm2015/ngafr-authentication.js",
   "fesm2015": "fesm2015/ngafr-authentication.js",
   "typings": "ngafr-authentication.d.ts",
   "metadata": "ngafr-authentication.metadata.json",
   "sideEffects": false,
   "dependencies": {
-    "tslib": "^1.9.0"
+    "tslib": "^2.0.0"
+  },
+  "__processed_by_ivy_ngcc__": {
+    "es2015": "11.1.1",
+    "fesm2015": "11.1.1",
+    "module": "11.1.1",
+    "typings": "11.1.1"
+  },
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by NGCC. This is not allowed.\\nPlease delete and rebuild the package, without compiling with NGCC, before attempting to publish.\\nNote that NGCC may have been run by importing this package into another project that is being built with Ivy enabled.\\n')\" && exit 1"
   }
 }

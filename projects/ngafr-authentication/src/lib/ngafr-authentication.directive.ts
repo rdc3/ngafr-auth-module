@@ -1,8 +1,11 @@
 import { NgafrAuthenticationService } from './ngafr-authentication.service';
-import { Directive, OnInit, ComponentFactoryResolver, ViewContainerRef, ChangeDetectorRef, EventEmitter, Output, Input, ElementRef, HostListener, AfterViewInit } from '@angular/core';
+import {
+    Directive, ComponentFactoryResolver, ViewContainerRef, ChangeDetectorRef,
+    EventEmitter, Output, Input
+} from '@angular/core';
+import { OnInit, AfterViewInit } from '@angular/core';
 import { NgafrAuthenticationComponent } from './ngafr-authentication.component';
-import { of } from 'rxjs';
-
+import { User } from '@firebase/auth-types';
 
 @Directive({
     selector: '[ngafrAuth]',
@@ -13,15 +16,14 @@ export class NgafrAuthDirective implements OnInit,  AfterViewInit {
     @Input('userLogOut') userLogOut : string; 
     @Input('hideDefaultLogOutButton') hideDefaultLogOutButton : string = 'false'; 
     @Output('userLoggedInEvent') userLoggedInEvent = new EventEmitter<{ isLoggedIn: boolean }>();
-    @Output('userEvent') userEvent = new EventEmitter<{ user: firebase.User }>();
+    @Output('userEvent') userEvent = new EventEmitter<{ user: User }>();
     private authTemplateComponent: NgafrAuthenticationComponent;
 
     constructor(
         private componentFactoryResolver: ComponentFactoryResolver,
         private viewContainer: ViewContainerRef,
         private cdr: ChangeDetectorRef,
-        private auth: NgafrAuthenticationService,
-        private el: ElementRef
+        private auth: NgafrAuthenticationService
     ) { 
         this.auth.loggedIn.subscribe(isLoggedIn => this.userLoggedInEvent.emit({ isLoggedIn: isLoggedIn }));
         this.auth.user.subscribe(user => this.userEvent.emit({ user: user }));

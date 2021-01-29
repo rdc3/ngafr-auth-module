@@ -8,7 +8,7 @@ import { FireBaseConfig } from '../environments/firebase';
 import { AuthCodeComponent } from './auth/auth-code/auth-code.component';
 import { AuthDemoComponent } from './auth/auth-demo/auth-demo.component';
 import { ViewSelectorComponent } from './_common/view-selector/view-selector.component';
-import { NgafrAuthenticationModule, IFirebaseConf, IFirebaseAuthProviders, NgafrAuthDirective } from 'ngafr-authentication';
+import { NgafrAuthenticationModule, IFirebaseConf, IFirebaseAuthProviders } from 'ngafr-authentication';
 // import { NgafrAuthDirective } from 'projects/ngafr-authentication/src/lib/ngafr-authentication.directive';
 
 const firebaseConfig: IFirebaseConf = FireBaseConfig;

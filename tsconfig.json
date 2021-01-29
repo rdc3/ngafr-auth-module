@@ -21,6 +21,9 @@
       "dom"
     ],
     "paths": {
+      "@angular/*": [
+        "./node_modules/@angular/*"
+      ],
       "ngafr-authentication": [
         "docs/ngafr-authentication"
       ],

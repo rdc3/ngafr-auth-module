@@ -3,6 +3,7 @@ import { FirebaseUISignInSuccessWithAuthResult, FirebaseUISignInFailure } from '
 import { AngularFireAuth } from '@angular/fire/auth';
 import { map, catchError } from 'rxjs/operators';
 import { of, Observable, BehaviorSubject } from 'rxjs';
+import { User } from '@firebase/auth-types';
 
 @Injectable({
   providedIn: 'root'
@@ -10,14 +11,14 @@ import { of, Observable, BehaviorSubject } from 'rxjs';
 export class NgafrAuthenticationService {
   private _loggedIn = false;
   loggedIn: BehaviorSubject<boolean> = new BehaviorSubject(this._loggedIn);
-  private _user: firebase.User = null;
-  user: BehaviorSubject<firebase.User> = new BehaviorSubject(this._user);
+  private _user: User = null;
+  user: BehaviorSubject<User> = new BehaviorSubject(this._user);
   hideLogOutButton$: BehaviorSubject<boolean> = new BehaviorSubject(false);
   constructor(
     private afAuth: AngularFireAuth,
   ) { }
-  isUserLoggedIn(): Observable<void | firebase.User> {
-      return this.afAuth.authState.pipe(map((fBaseUser: firebase.User) => {
+  isUserLoggedIn(): Observable<void | User> {
+      return this.afAuth.authState.pipe(map((fBaseUser: User) => {
         console.log('User: ', (fBaseUser && fBaseUser.email) ? fBaseUser.displayName : 'Guest');
         this._loggedIn = (!!fBaseUser && !!fBaseUser.email);
         this._user = fBaseUser;

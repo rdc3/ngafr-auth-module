@@ -2,6 +2,16 @@
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
   "dest": "../../docs/ngafr-authentication",
   "lib": {
-    "entryFile": "src/public-api.ts"
-  }
+    "entryFile": "src/public-api.ts",
+    "umdModuleIds": {
+      "firebaseui-angular": "firebaseui-angular",
+      "firebase": "firebase",
+      "firebaseui": "firebaseui"
+    }
+  },
+  "whitelistedNonPeerDependencies": [
+  "firebaseui-angular",
+  "firebase",
+  "firebaseui"
+  ]
 }
