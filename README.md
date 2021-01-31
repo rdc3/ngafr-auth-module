@@ -35,22 +35,26 @@ Run `git clone https://github.com/rdc3/ngafr-authentication`
 * Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ### Error TS2344: Type ‘T[K]’ does not satisfy the constraint
-When trying to run ng serve command, you may got the error:
-`ERROR in node_modules/@angular/fire/angularfire2.d.ts:37:49 - error TS2344: Type 'T[K]' does not satisfy the constraint '(...args: any) => any'.
-  Type 'T[{ [K in keyof T]: T[K] extends Function ? K : never; }[keyof T]]' is not assignable to type '(...args: any) => any'.
-    Type 'T[T[keyof T] extends Function ? keyof T : never]' is not assignable to type '(...args: any) => any'.
-      Type 'T[keyof T]' is not assignable to type '(...args: any) => any'.
-        Type 'T[string] | T[number] | T[symbol]' is not assignable to type '(...args: any) => any'.
-          Type 'T[string]' is not assignable to type '(...args: any) => any'.
+    When trying to run ng serve command, you may got the error:
+    ```
+        ERROR in node_modules/@angular/fire/angularfire2.d.ts:37:49 - error TS2344: Type 'T[K]' does not satisfy the constraint '(...args: any) => any'.
+        Type 'T[{ [K in keyof T]: T[K] extends Function ? K : never; }[keyof T]]' is not assignable to type '(...args: any) => any'.
+            Type 'T[T[keyof T] extends Function ? keyof T : never]' is not assignable to type '(...args: any) => any'.
+            Type 'T[keyof T]' is not assignable to type '(...args: any) => any'.
+                Type 'T[string] | T[number] | T[symbol]' is not assignable to type '(...args: any) => any'.
+                Type 'T[string]' is not assignable to type '(...args: any) => any'.
 
-...
-...`
-It is because of the TypeScript type checking in the definitions file of the AngularFire library.
-To avoid this error, just add an option in tsconfig.json file:
-`{
-  //...
-  compilerOptions: {
-    "skipLibCheck": true,
-    //...
-  }
-}`
+        ...
+        ...
+    ```
+    It is because of the TypeScript type checking in the definitions file of the AngularFire library.
+    To avoid this error, just add an option in tsconfig.json file:
+    ```
+        {
+            //...
+            compilerOptions: {
+                "skipLibCheck": true,
+                //...
+            }
+        }
+    ```
