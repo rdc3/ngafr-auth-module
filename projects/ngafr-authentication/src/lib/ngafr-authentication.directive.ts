@@ -23,13 +23,15 @@ export class NgafrAuthDirective implements OnInit,  AfterViewInit {
         private componentFactoryResolver: ComponentFactoryResolver,
         private viewContainer: ViewContainerRef,
         private cdr: ChangeDetectorRef,
-        private auth: NgafrAuthenticationService
-    ) { 
+        private auth: NgafrAuthenticationService)
+    { 
         this.auth.loggedIn.subscribe(isLoggedIn => this.userLoggedInEvent.emit({ isLoggedIn: isLoggedIn }));
         this.auth.user.subscribe(user => this.userEvent.emit({ user: user }));
-
     }
+
     ngAfterViewInit(): void {
+        if (this.hideDefaultLogOutButton.toLowerCase() !== 'true' || this.hideDefaultLogOutButton.toLowerCase() !== 'false')
+            this.hideDefaultLogOutButton = 'false';
         this.auth.hideLogOutButton(JSON.parse(this.hideDefaultLogOutButton));
     }
 

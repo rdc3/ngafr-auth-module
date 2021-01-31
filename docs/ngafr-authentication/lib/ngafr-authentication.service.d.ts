@@ -6,8 +6,8 @@ import * as ɵngcc0 from '@angular/core';
 export declare class NgafrAuthenticationService {
     private afAuth;
     private _loggedIn;
-    loggedIn: BehaviorSubject<boolean>;
     private _user;
+    loggedIn: BehaviorSubject<boolean>;
     user: BehaviorSubject<User>;
     hideLogOutButton$: BehaviorSubject<boolean>;
     constructor(afAuth: AngularFireAuth);

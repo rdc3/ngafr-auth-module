@@ -8,15 +8,16 @@ import { User } from '@firebase/auth-types';
 @Injectable({
   providedIn: 'root'
 })
+
 export class NgafrAuthenticationService {
   private _loggedIn = false;
-  loggedIn: BehaviorSubject<boolean> = new BehaviorSubject(this._loggedIn);
   private _user: User = null;
+  loggedIn: BehaviorSubject<boolean> = new BehaviorSubject(this._loggedIn);
   user: BehaviorSubject<User> = new BehaviorSubject(this._user);
   hideLogOutButton$: BehaviorSubject<boolean> = new BehaviorSubject(false);
-  constructor(
-    private afAuth: AngularFireAuth,
-  ) { }
+
+  constructor(private afAuth: AngularFireAuth) { }
+
   isUserLoggedIn(): Observable<void | User> {
       return this.afAuth.authState.pipe(map((fBaseUser: User) => {
         console.log('User: ', (fBaseUser && fBaseUser.email) ? fBaseUser.displayName : 'Guest');
@@ -30,25 +31,21 @@ export class NgafrAuthenticationService {
         catchError((e) => of(console.log('exception:', e))
       ));
   }
+
   logout() {
     this.loggedIn.next(false);
     this.afAuth.signOut();
   }
+
   hideLogOutButton(hide: boolean) {
     this.hideLogOutButton$.next(hide);
   }
 
   loginSuccessCallback(data: FirebaseUISignInSuccessWithAuthResult) {
-    // console.log('successCallback', data);
     this._loggedIn = true;
-    // this.router.navigate(['page']);
   }
 
   loginErrorCallback(data: FirebaseUISignInFailure) {
-    // console.warn('errorCallback', data);
     this._loggedIn = false;
   }
-  // isUserLoggedIn(): boolean {
-  //   return this.loggedIn;
-  // }
 }

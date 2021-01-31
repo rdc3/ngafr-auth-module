@@ -15,18 +15,16 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve ngafr-testapp",
-    "build": "npm run build:auth && npm run build:app",
+    "build": "npm run build:auth-prod && npm run build:app",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:app1": "npm run build:auth && ng build ngafr-testapp --prod --delete-output-path false --outputPath docs --baseHref /ngafr-authentication/ && npm run create404page",
-    "build:app": "ng build ngafr-testapp --outputPath docs --baseHref /ngafr-authentication/ --delete-output-path false",
+    "build:app": "ng build ngafr-testapp --output-path docs --base-href /ngafr-authentication/ --delete-output-path false",
     "create404page": "ncp docs/index.html docs/404.html",
     "build:auth": "ng build ngafr-authentication",
+    "build:auth-prod": "ng build ngafr-authentication --prod",
     "build:auth-watch": "ng build ngafr-authentication --watch",
-    "prebuild": "npm run build:auth",
-    "postbuild": "npm run create404page",
-    "postinstall": "ngcc"
+    "postbuild": "npm run create404page"
   },
   "private": true,
   "dependencies": {
@@ -47,6 +45,7 @@
     "hammerjs": "^2.0.8",
     "hark": "^1.2.3",
     "rxjs": "~6.6.3",
+    "tsickle": "^0.39.1",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
   },

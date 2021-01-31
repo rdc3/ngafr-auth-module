@@ -1,7 +1,9 @@
 
   <div class="terminal">
     <pre>
-AppModule 
+Download Packages :
+    npm i ngafr-authentication firebase firebaseui @angular/fire firebaseui-angular --save
+AppModule :
     const firebaseConfig = &#123;
       apiKey: '*******',
       authDomain: '*******',
@@ -28,7 +30,7 @@ AppModule
       ...
     ]
 
-Template
+Template :
     &lt;div
       ngafrAuth
       (userLoggedInEvent)="loggedInEvent($event)"
@@ -36,5 +38,21 @@ Template
       hideDefaultLogOutButton = "true"
       #ngafrAuth="ngafrAuth"&gt;
     &lt;/div&gt;
+    &lt;button [disabled]="!loggedIn" (click)="ngafrAuth.logout()"&gt;Logout&lt;/button&gt;
+
+Component :
+    export class AuthDemoComponent &#123;
+        public loggedIn = false;
+        public userName = 'Guest';
+        constructor() &#123;
+        loggedInEvent($event) &#123;
+            this.loggedIn = $event.isLoggedIn;
+        &#125;
+        userEvent($event) &#123;
+            this.userName = 'Guest';
+            if ($event && $event.user && $event.user.displayName)
+                this.userName = $event.user.displayName;
+        &#125;
+    &#125;
     </pre>
 </div>

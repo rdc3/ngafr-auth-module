@@ -7,11 +7,10 @@ import { NgafrAuthenticationService } from './ngafr-authentication.service';
     <ng-template #ngafrAuthElement>
       <firebase-ui (signInSuccessWithAuthResult)="this.ngafrAuth.loginSuccessCallback($event)"
                    (signInFailure)="this.ngafrAuth.loginErrorCallback($event)"></firebase-ui>
-      <button *ngIf="loggedIn && !hideLogOutButton" (click)="this.ngafrAuth.logout()">Logout1</button>
+      <button *ngIf="loggedIn && !hideLogOutButton" (click)="this.ngafrAuth.logout()">Logout</button>
     </ng-template>
   `,
   styleUrls: [
-    './ngafr-authentication.component.css',
     '../../../../node_modules/firebaseui/dist/firebaseui.css'
   ],
   encapsulation: ViewEncapsulation.None
